@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPOON RESTAURANT</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+    </style>
+    <style>
+    /*css RESET*/
+        html {
+        box-sizing: border-box;
+        font-size: 16px;
+        }
+
+        *, *:before, *:after {
+        box-sizing: inherit;
+        }
+
+        body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+        }
+
+        ol, ul {
+        list-style: none;
+        }
+
+        img {
+        max-width: 100%;
+        height: auto;
+        }
+        body{
+            background-color: #444bbe;
+        }
+        header{
+           
+            width: 1000px;
+            height: 200px;
+            margin: auto;
+            position: relative;
+            font-family: ranchers, sans-serif;
+            color: white;
+        }
+        header img{
+            width: 200px;
+            margin-top: 30px;
+            margin-left: 100px;
+            position: absolute;
+            top:auto;
+        }
+        header p{
+            
+            bottom: 20px;
+            left: 30px;
+            position: absolute;
+        }
+        header ul{
+            position: absolute;
+            bottom: 20px;
+            right: 0;
+        }
+        header ul li{
+            display: inline-block;
+            font-weight: 700;
+            font-size: 20px;
+            margin-right: 60px;
+            text-align: center;
+        }
+        header ul li.selector{
+            border-bottom: solid 4px white;
+        }
+        header ul a{
+            text-decoration: none;
+            color: white;
+        }
+        
+        #main {
+           width: 1000px;
+           margin: auto;
+           margin-top: 100px;
+           
+           position: relative;
+        }
+        #main .spoon{
+            position: absolute;
+            width: 900px;
+            margin-left: 100px;
+           
+        }
+        #main .line{
+            position: absolute;
+            width: 150px;
+            margin-top: 180px;
+            margin-left: 400px;
+        }
+        #main form{
+            position: absolute;
+            width: 400px;
+            color: white;
+            right: 20px;
+            top: 180px;
+            font-size: 18px;
+            line-height: 40px;
+            font-family:  ranchers, sans-serif;
+        }
+        #main form .in{
+            border-radius: 5px;
+            color: white;
+            font-size: 18px;
+            width: 300px;
+            height: 30px;
+            background-color: rgba(0 0 0 0.0);
+            border:1px solid rgba(255 255 255 0.6);
+        }
+        #main form .btn{
+            display: block;
+            font-family: ranchers, sans-serif;
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+            width: 200px;
+            height: 40px;
+            border-radius: 5px;
+            border: 2px solid white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header class="header">
+        <img src="img/logo2.png" alt="logo spoon_restaurant">
+       
+        <navbar>
+            <ul>
+                <a href="#"><li class="selector">HOME</li></a>
+                <a href="#"><li>ABOUT</li></a>
+                <a href="#"><li>WORK</li></a>
+                <a href="#"><li>BLOG</li></a>
+                <a href="#"><li>CONTACT</li></a>
+            </ul>
+        </navbar>
+    </header>
+    <div id="main">
+        <img src="img/spoon.png" alt="imagen cuchara" class="spoon">
+        <img src="img/line.png" alt="linea cuchara" class="line">
+        
+        <form action="#">
+            <h3>Register</h3>
+           
+                <input type="text" name="nombre" id="name"  class="in" placeholder="Name" required>
+          
+         
+            
+                <input type="email" name="email" id="email" class="in"  placeholder="Email" required>
+          
+            <h3>Diners</h3>
+            <select name="comensales" id="comensales">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+            </select>
+            <h3>Table</h3>
+          
+                <input type="radio" name="table" checked>No Smoker
+                <input type="radio" name="table" >Smoker                           
+         
+            
+            <label for="submit">
+                <input type="button" value="SEND" class="btn">
+            </label>
+        </form>                   
+    </div>
+</body>
+</html>
